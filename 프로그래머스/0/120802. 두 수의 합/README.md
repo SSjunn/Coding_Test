@@ -70,4 +70,6 @@
 </ul>
 
 
+### lambda : 한 줄로 작성할 수 있는 익명 함수
+
 > 출처: 프로그래머스 코딩 테스트 연습, https://school.programmers.co.kr/learn/challenges
