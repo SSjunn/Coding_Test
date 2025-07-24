@@ -6,7 +6,7 @@ def solution(n, k):
     return result
 
 '''
-    #최적화를 시킨다면
+    #리팩터
     def solution(n, k):
     return (n * 12000) + ((k - n // 10) * 2000)
 '''
