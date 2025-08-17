@@ -1,2 +1,3 @@
 def solution(num_list):
-    return num_list[::-1]
+    num_list.reverse()  # 원본 리스트가 바뀜
+    return num_list
