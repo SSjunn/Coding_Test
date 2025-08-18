@@ -4,6 +4,6 @@ def solution(s):
         if token == 'Z':
             if stack:
                 stack.pop()
-        else :
+        else:
             stack.append(int(token))
     return sum(stack)
