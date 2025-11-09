@@ -4,6 +4,7 @@
     arr[i] i++ => result 에 담기
     answer
 */
+/*
 class Solution {
     public String solution(String[] arr) {
         String result = "";
@@ -13,5 +14,11 @@ class Solution {
         }
         System.out.println(result);
         return result; // ← 이게 있어야 약속 지켜짐!
+    }
+}
+*/
+class Solution {
+    public String solution(String[] arr) {
+        return String.join("", arr); // 쉼표 대신 빈 문자열
     }
 }
