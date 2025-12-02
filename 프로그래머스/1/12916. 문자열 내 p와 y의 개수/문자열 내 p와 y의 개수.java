@@ -1,5 +1,5 @@
 class Solution {
-        boolean solution(String s) {
+        public boolean solution(String s) {
             boolean answer = true;
             int pCount = 0;
             int yCount = 0;
