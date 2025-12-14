@@ -2,6 +2,16 @@ import java.util.LinkedList;
 import java.util.Queue;
 import java.util.Scanner;
 
+/*
+    FIFO
+    위에 하나 버리고 다음 카드 밑으로 내리고 반복 해서 남은거 찾기
+    N개 카드
+    for(카드 개수 반복)
+        카드 저장
+    while(카드>1)
+        맨 위 카드 버리고 poll
+        맨 위 카드 밑으로 내려 poll -> add
+ */
 public class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
@@ -9,16 +19,15 @@ public class Main {
 
         int N = sc.nextInt();
 
-        // 1번 카드부터 N번 카드까지
-        for (int i = 1; i <= N; i++) {
+        // 차례로 담아
+        for(int i = 1; i<N+1; i++){
             queue.add(i);
         }
-
-        while (queue.size() > 1) {
-            queue.poll();            // 맨 위 카드 버림
-            queue.add(queue.poll()); // 다음 카드 맨 아래로
+        // 반복
+        while(queue.size() > 1){
+            queue.poll();
+            queue.add(queue.poll());
         }
-
         System.out.println(queue.poll());
     }
 }
