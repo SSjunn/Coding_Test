@@ -17,8 +17,22 @@ class Solution {
     }
 }
 */
-class Solution {
-    public String solution(String[] arr) {
-        return String.join("", arr); // 쉼표 대신 빈 문자열
+
+// 배열 arr 배열을 하나씩 붙여서 문자열 생성
+class Solution{
+    public String solution(String[] arr){
+        StringBuilder sb = new StringBuilder();
+        // int i = 0;
+        
+        // while(i < arr.length){
+        //     sb.append(arr[i]);
+        //     i++;
+        // }
+        
+        for (int i = 0; i<arr.length; i++){
+            sb.append(arr[i]);
+        }
+        
+        return sb.toString();
     }
 }
